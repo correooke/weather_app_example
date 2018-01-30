@@ -13,9 +13,12 @@ const setForecastData = payload => ({ type: SET_FORECAST_DATA, payload });
 const getWeatherCity = payload => ({type: GET_WEATHER_CITY, payload });
 const setWeatherCity = payload => ({type: SET_WEATHER_CITY, payload });
 
+const protocol = location.protocol;
+
 const api_key = "f99bbd9e4959b513e9bd0d7f7356b38d";
-const url = "http://api.openweathermap.org/data/2.5/forecast";
-const url_weather = "http://api.openweathermap.org/data/2.5/weather";
+const url_base = `${protocol}://api.openweathermap.org/data/2.5/`
+const url = `${url_base}forecast`;
+const url_weather = `${url_base}weather`;
 
 export const setSelectedCity = payload => {
 
