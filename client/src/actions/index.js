@@ -16,13 +16,14 @@ const setWeatherCity = payload => ({type: SET_WEATHER_CITY, payload });
 const protocol = window.location.protocol;
 
 const api_key = "f99bbd9e4959b513e9bd0d7f7356b38d";
-const url_base = `${protocol}://api.openweathermap.org/data/2.5/`
+const url_base = `${protocol}//api.openweathermap.org/data/2.5/`;
 const url = `${url_base}forecast`;
 const url_weather = `${url_base}weather`;
 
 export const setSelectedCity = payload => {
 
     return (dispatch, getState) => {
+        debugger;
         const url_forecast = `${url}?q=${payload}&appid=${api_key}`;
         
         // activar en el estado un indicador de busqueda de datos
@@ -58,7 +59,7 @@ export const setWeather = payload => {
         payload.forEach(city => {
             
             dispatch(getWeatherCity(city));
-
+            debugger;
             const api_weather = `${url_weather}?q=${city}&appid=${api_key}`;
             fetch(api_weather).then( data => {
                 return data.json();
