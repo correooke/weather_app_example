@@ -1,0 +1,35 @@
+{
+  "name": "weatherapp",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "convert-units": "^2.3.1",
+    "loadash": "^1.0.0",
+    "lodash.topairs": "^4.3.0",
+    "material-ui": "^0.19.2",
+    "moment": "^2.19.1",
+    "prop-types": "^15.5.10",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-flexbox-grid": "^1.1.5",
+    "react-redux": "^5.0.6",
+    "react-scripts": "1.0.13",
+    "react-weathericons": "^1.0.4",
+    "redux": "^3.7.2",
+    "redux-thunk": "^2.2.0",
+    "reselect": "^2.5.4",
+    "reselect-tools": "0.0.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "eslint": "^4.8.0",
+    "eslint-config-airbnb": "^15.1.0",
+    "eslint-plugin-react": "^7.4.0",
+    "eslint-watch": "^3.1.2"
+  }
+}

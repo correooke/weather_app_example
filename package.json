@@ -1,35 +1,23 @@
 {
   "name": "weatherapp",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "convert-units": "^2.3.1",
-    "loadash": "^1.0.0",
-    "lodash.topairs": "^4.3.0",
-    "material-ui": "^0.19.2",
-    "moment": "^2.19.1",
-    "prop-types": "^15.5.10",
-    "react": "^15.6.1",
-    "react-dom": "^15.6.1",
-    "react-flexbox-grid": "^1.1.5",
-    "react-redux": "^5.0.6",
-    "react-scripts": "1.0.13",
-    "react-weathericons": "^1.0.4",
-    "redux": "^3.7.2",
-    "redux-thunk": "^2.2.0",
-    "reselect": "^2.5.4",
-    "reselect-tools": "0.0.4"
-  },
+  "version": "1.0.0",
+  "description": "Aplicación simple para curso React Redux",
+  "main": "index.js",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "devDependencies": {
-    "eslint": "^4.8.0",
-    "eslint-config-airbnb": "^15.1.0",
-    "eslint-plugin-react": "^7.4.0",
-    "eslint-watch": "^3.1.2"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/correooke/weather_app_example.git"
+  },
+  "author": "Emiliano Ocariz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/correooke/weather_app_example/issues"
+  },
+  "homepage": "https://github.com/correooke/weather_app_example#readme",
+  "dependencies": {
+    "express": "^4.16.2"
   }
 }
